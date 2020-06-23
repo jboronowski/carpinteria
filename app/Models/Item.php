@@ -6,18 +6,19 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Categoria
+ * Class Item
  * @package App\Models
- * @version June 23, 2020, 9:07 pm UTC
+ * @version June 23, 2020, 9:44 pm UTC
  *
- * @property string categoria_nombre
- * @property string categoria_descripcion
+ * @property string item_nombre
+ * @property string item_descripcion
+ * @property integer categoria_id
  */
-class Categoria extends Model
+class Item extends Model
 {
     use SoftDeletes;
 
-    public $table = 'categorias';
+    public $table = 'items';
     
 
     protected $dates = ['deleted_at'];
@@ -25,8 +26,9 @@ class Categoria extends Model
 
 
     public $fillable = [
-        'categoria_nombre',
-        'categoria_descripcion'
+        'item_nombre',
+        'item_descripcion',
+        'categoria_id'
     ];
 
     /**
@@ -36,8 +38,9 @@ class Categoria extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'categoria_nombre' => 'string',
-        'categoria_descripcion' => 'string'
+        'item_nombre' => 'string',
+        'item_descripcion' => 'string',
+        'categoria_id' => 'integer'
     ];
 
     /**
@@ -48,8 +51,9 @@ class Categoria extends Model
     public static $rules = [
         
     ];
-    public function Item (){
-     return $this-> hasMany('App\Models\Item');
-
+     public function categoria (){
+        return $this-> belongsTo('App\Models\Categoria');
     }
+
+    
 }
