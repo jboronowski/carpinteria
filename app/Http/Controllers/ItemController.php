@@ -11,6 +11,7 @@ use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
 use App\Models\Categoria;
+use App\Models\Item;
 class ItemController extends AppBaseController
 {
     /** @var  ItemRepository */
@@ -32,9 +33,10 @@ class ItemController extends AppBaseController
         $this->itemRepository->pushCriteria(new RequestCriteria($request));
         $items = $this->itemRepository->all();
 
-        return view('items.index')
-            ->with('items', $items);
+        $items = Item::orderBy('id', 'desc')->Paginate(2);
+        return view('items.index',compact('items'));
     }
+    
 
     /**
      * Show the form for creating a new Item.

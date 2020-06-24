@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
-
+use App\Models\Categoria;
 class CategoriaController extends AppBaseController
 {
     /** @var  CategoriaRepository */
@@ -31,9 +31,8 @@ class CategoriaController extends AppBaseController
     {
         $this->categoriaRepository->pushCriteria(new RequestCriteria($request));
         $categorias = $this->categoriaRepository->all();
-
-        return view('categorias.index')
-            ->with('categorias', $categorias);
+        $categorias = Categoria::orderBy('id', 'desc')->Paginate(2);
+        return view('categorias.index',compact('categorias'));
     }
 
     /**

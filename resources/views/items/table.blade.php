@@ -15,6 +15,7 @@
             <td>{{ $item->item_descripcion }}</td>
             <td>{{ $item->categoria->categoria_nombre }}</td>
                 <td>
+
                     {!! Form::open(['route' => ['items.destroy', $item->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
                         <a href="{{ route('items.show', [$item->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
@@ -26,5 +27,8 @@
             </tr>
         @endforeach
         </tbody>
+
     </table>
+  {{ $items->links() }}
+
 </div>

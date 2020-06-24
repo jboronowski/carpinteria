@@ -25,4 +25,6 @@
         @endforeach
         </tbody>
     </table>
+    {{ $categorias->links() }}
+
 </div>
