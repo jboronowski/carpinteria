@@ -24,6 +24,10 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('categorias', 'CategoriaController');
 
+<<<<<<< HEAD
 Route::resource('items', 'ItemController');
 
 Route::resource('depositos', 'DepositoController');
+=======
+Route::resource('items', 'ItemController');
+>>>>>>> 08514be1eb3ca5370d4eced85853b568bb65bdc7
