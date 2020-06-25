@@ -31,7 +31,7 @@ class CategoriaController extends AppBaseController
     {
         $this->categoriaRepository->pushCriteria(new RequestCriteria($request));
         $categorias = $this->categoriaRepository->all();
-        $categorias = Categoria::orderBy('id', 'desc')->Paginate(2);
+        
         return view('categorias.index',compact('categorias'));
     }
 

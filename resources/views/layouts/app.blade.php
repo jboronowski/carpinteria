@@ -100,9 +100,7 @@
         </div>
 
         <!-- Main Footer -->
-        <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2020 <a href="https://github.com/jlbb-dev/carpinteria">Company M.R.M.A.F.A.J</a>.</strong> All rights reserved.
-        </footer>
+       
 
     </div>
 @else
@@ -151,7 +149,9 @@
         </div>
     </div>
     @endif
-
+      <footer class="main-footer" style="max-height: 100px;text-align: center">
+            <strong>Copyright © 2020 <a href="https://github.com/jlbb-dev/carpinteria">Company M.R.M.A.F.A.J</a>.</strong> All rights reserved.
+        </footer>
     <!-- jQuery 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
