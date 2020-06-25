@@ -23,5 +23,7 @@
         @endforeach
         </tbody>
     </table>
+
      {{ $depositos->links() }}
+
 </div>

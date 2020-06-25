@@ -46,8 +46,10 @@ class Deposito extends Model
         
     ];
 
+
       public function stock (){
      return $this-> hasMany('App\Models\Stock');
 
     }
+
 }

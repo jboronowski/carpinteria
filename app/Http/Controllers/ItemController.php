@@ -100,14 +100,18 @@ class ItemController extends AppBaseController
     public function edit($id)
     {
         $item = $this->itemRepository->findWithoutFail($id);
+
          $categorias = Categoria::pluck('categoria_nombre','id');
+
         if (empty($item)) {
             Flash::error('Item not found');
 
             return redirect(route('items.index'));
         }
 
+
        return view('items.edit', compact('item', 'categorias'));
+
     }
 
     /**

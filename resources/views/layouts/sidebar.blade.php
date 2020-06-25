@@ -6,7 +6,9 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
+
                 <img src="https://static.vecteezy.com/system/resources/previews/000/550/980/non_2x/user-icon-vector.jpg" class="img-circle"
+
                      alt="User Image"/>
             </div>
             <div class="pull-left info">

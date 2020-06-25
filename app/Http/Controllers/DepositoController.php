@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+
 use App\Models\Deposito;
 
 
@@ -34,8 +35,11 @@ class DepositoController extends AppBaseController
         $this->depositoRepository->pushCriteria(new RequestCriteria($request));
         $depositos = $this->depositoRepository->all();
 
+
        $depositos = Deposito::orderBy('id', 'desc')->Paginate(2);
         return view('depositos.index',compact('depositos'));
+
+   
     }
 
     /**
