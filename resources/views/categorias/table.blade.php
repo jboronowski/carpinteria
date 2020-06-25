@@ -1,3 +1,4 @@
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
 <link  href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
@@ -14,6 +15,7 @@
 <div class="table-responsive">
 
     <table class="table 123" id="123">
+
         <thead>
             <tr>
                 <th>Categoria Nombre</th>
@@ -39,6 +41,23 @@
         @endforeach
         </tbody>
     </table>
-    {{ $categorias->links() }}
 
 </div>
+@section('scripts')
+<script>
+         jQuery(function($) {
+        //initiate dataTables plugin
+        var myTable = 
+        $('#myTable')
+        //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+        .DataTable( {
+            
+            "aoColumns": [
+                null,
+                null,
+                null
+            ],
+            });
+        });
+    </script>
+@endsection

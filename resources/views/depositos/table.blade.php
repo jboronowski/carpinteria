@@ -1,3 +1,4 @@
+
 <div class="table-responsive">
     <table class="table" id="depositos-table">
         <thead>
@@ -23,5 +24,7 @@
         @endforeach
         </tbody>
     </table>
+
      {{ $depositos->links() }}
+
 </div>
