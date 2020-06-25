@@ -43,7 +43,7 @@ class Deposito extends Model
      * @var array
      */
     public static $rules = [
-        
+        'descripcion' => 'required|alpha',
     ];
 
       public function stock (){

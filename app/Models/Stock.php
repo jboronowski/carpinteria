@@ -49,6 +49,9 @@ class Stock extends Model
      * @var array
      */
     public static $rules = [
+        'cantidad' => 'required|integer',
+        'item_id' => 'required',
+        'deposito_id' => 'required'
         
     ];
 

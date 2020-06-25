@@ -2,9 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Carpitenria</title>
+    <title>Carpinteria</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
@@ -38,7 +37,7 @@
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="#" class="logo">
+            <a href="{{ url('/home') }}" class="logo">
                 <b>Carpinteria S.A</b>
             </a>
 
@@ -102,7 +101,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2020 <a href="#">Company M.R.M.A.F.A.J</a>.</strong> All rights reserved.
+            <strong>Copyright © 2020 <a href="https://github.com/jlbb-dev/carpinteria">Company M.R.M.A.F.A.J</a>.</strong> All rights reserved.
         </footer>
 
     </div>
@@ -122,7 +121,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{!! url('/') !!}">
-                    InfyOm Generator
+                    SIS-S.A
                 </a>
             </div>
 

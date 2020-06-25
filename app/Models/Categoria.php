@@ -46,6 +46,8 @@ class Categoria extends Model
      * @var array
      */
     public static $rules = [
+        'categoria_nombre' => 'required|alpha',
+        'categoria_descripcion' => 'required|alpha'
         
     ];
     public function Item (){
