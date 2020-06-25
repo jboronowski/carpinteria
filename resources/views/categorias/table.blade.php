@@ -1,5 +1,6 @@
+
 <div class="table-responsive">
-    <table class="table" id="categorias-table">
+    <table class="table" id="myTable">
         <thead>
             <tr>
                 <th>Categoria Nombre</th>
@@ -25,6 +26,23 @@
         @endforeach
         </tbody>
     </table>
-    {{ $categorias->links() }}
 
 </div>
+@section('scripts')
+<script>
+         jQuery(function($) {
+        //initiate dataTables plugin
+        var myTable = 
+        $('#myTable')
+        //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+        .DataTable( {
+            
+            "aoColumns": [
+                null,
+                null,
+                null
+            ],
+            });
+        });
+    </script>
+@endsection
