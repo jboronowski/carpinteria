@@ -5,6 +5,7 @@
         <h1 class="pull-left">Items</h1>
         <h1 class="pull-right">
            <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{{ route('items.create') }}">Nuevo Item</a>
+           <a class="btn btn-success pull-right" style="margin-top: -10px;margin-bottom: 5px" href="/exportar">Exportar</a>
         </h1>
     </section>
     <div class="content">
@@ -22,6 +23,7 @@
         
         </div>
     </div>
+
     
 @endsection
 
