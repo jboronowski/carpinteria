@@ -1,5 +1,5 @@
 <div class="table-responsive">
-    <table class="table" id="items-table">
+    <table class="table" id="data-table">
         <thead>
             <tr>
                 <th>Item Nombre</th>

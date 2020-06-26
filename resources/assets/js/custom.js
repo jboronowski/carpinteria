@@ -1,6 +1,12 @@
 
-$(document).ready(function() {
-    $('.datatable').DataTable({
-       
+
+  $(document).ready(function(){
+    $('#mytable1').DataTable({
+     
+            "aoColumns": [
+                null,
+                null,
+                null
+            ],
     });
-});
+  });

@@ -1,6 +1,6 @@
 
 <div class="table-responsive">
-    <table class="table" id="depositos-table">
+    <table class="table" id="data-table">
         <thead>
             <tr>
                 <th>Descripcion</th>

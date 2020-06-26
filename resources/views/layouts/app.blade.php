@@ -165,6 +165,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+ 
+
     @yield('scripts')
+    <script>
+         jQuery(function($) {
+        //initiate dataTables plugin
+        var myTable = 
+        $('#data-table')
+        //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+        .DataTable( {
+            
+            "aoColumns": [
+                null,
+                null,
+                null
+            ],
+            });
+        });
+    </script>
 </body>
 </html>

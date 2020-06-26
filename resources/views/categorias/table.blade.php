@@ -1,7 +1,7 @@
 
 <div class="table-responsive">
 
-    <table class="table" id="myTable">
+    <table class="table" id="data-table">
 
         <thead>
             <tr>
@@ -31,20 +31,5 @@
 
 </div>
 @section('scripts')
-<script>
-         jQuery(function($) {
-        //initiate dataTables plugin
-        var myTable = 
-        $('#myTable')
-        //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
-        .DataTable( {
-            
-            "aoColumns": [
-                null,
-                null,
-                null
-            ],
-            });
-        });
-    </script>
+
 @endsection
