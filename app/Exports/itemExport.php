@@ -18,7 +18,10 @@ class ItemExport implements FromCollection,WithHeadings
             'id',
          'item_nombre',
          'item_descripcion',
-         'categoria_id'
+         'categoria_id',
+         'creado',
+         'actualizado',
+         'borrado'
         ];
     }
     public function collection()

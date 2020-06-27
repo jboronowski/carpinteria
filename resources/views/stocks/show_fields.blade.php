@@ -13,13 +13,13 @@
 <!-- Item Id Field -->
 <div class="form-group">
     {!! Form::label('item_id', 'Item Id:') !!}
-    <p>{{ $stock->item_id }}</p>
+    <p>{{ $stock->item->item_nombre }}</p>
 </div>
 
 <!-- Deposito Id Field -->
 <div class="form-group">
     {!! Form::label('deposito_id', 'Deposito Id:') !!}
-    <p>{{ $stock->deposito_id }}</p>
+    <p>{{ $stock->deposito->descripcion }}</p>
 </div>
 
 <!-- Created At Field -->

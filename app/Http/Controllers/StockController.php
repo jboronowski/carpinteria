@@ -35,7 +35,7 @@ class StockController extends AppBaseController
     {
         $this->stockRepository->pushCriteria(new RequestCriteria($request));
         $stocks = $this->stockRepository->all();
-        $stocks = Stock::orderBy('id', 'desc')->Paginate(2);
+        
         return view('stocks.index',compact('stocks'));
     }
 

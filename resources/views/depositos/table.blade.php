@@ -4,7 +4,7 @@
         <thead>
             <tr>
                 <th>Descripcion</th>
-                <th colspan="3">Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +25,5 @@
         </tbody>
     </table>
 
-     {{ $depositos->links() }}
 
 </div>

@@ -36,7 +36,7 @@ class DepositoController extends AppBaseController
         $depositos = $this->depositoRepository->all();
 
 
-       $depositos = Deposito::orderBy('id', 'desc')->Paginate(2);
+       
         return view('depositos.index',compact('depositos'));
 
    

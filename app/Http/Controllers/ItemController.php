@@ -34,7 +34,7 @@ class ItemController extends AppBaseController
         $this->itemRepository->pushCriteria(new RequestCriteria($request));
         $items = $this->itemRepository->all();
 
-        $items = Item::orderBy('id', 'desc')->Paginate(2);
+        
         return view('items.index',compact('items'));
     }
     

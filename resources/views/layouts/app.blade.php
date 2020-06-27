@@ -169,20 +169,15 @@
 
     @yield('scripts')
     <script>
-         jQuery(function($) {
-        //initiate dataTables plugin
-        var myTable = 
-        $('#data-table')
-        //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
-        .DataTable( {
-            
-            "aoColumns": [
-                null,
-                null,
-                null
-            ],
-            });
-        });
+    $(document).ready(function () {
+        $('#data-table').DataTable({
+         "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
+          }
+         }  
+        );
+    });
     </script>
+
 </body>
 </html>

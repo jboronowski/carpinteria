@@ -5,7 +5,7 @@
                 <th>Cantidad</th>
         <th>Item </th>
         <th>Deposito </th>
-                <th colspan="3">Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -27,5 +27,5 @@
         @endforeach
         </tbody>
     </table>
-    {{ $stocks->links() }}
+
 </div>

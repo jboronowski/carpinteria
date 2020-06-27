@@ -6,15 +6,18 @@
         <thead>
             <tr>
                 <th>Categoria Nombre</th>
-        <th>Categoria Descripcion</th>
-                <th colspan="3">Action</th>
+                <th>Categoria Descripcion</th>
+                <th>Action</th>
+                
+
             </tr>
         </thead>
         <tbody>
         @foreach($categorias as $categoria)
             <tr>
                 <td>{{ $categoria->categoria_nombre }}</td>
-            <td>{{ $categoria->categoria_descripcion }}</td>
+                <td>{{ $categoria->categoria_descripcion }}</td>
+               
                 <td>
                     {!! Form::open(['route' => ['categorias.destroy', $categoria->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

@@ -5,7 +5,7 @@
                 <th>Item Nombre</th>
                 <th>Item Descripcion</th>
                 <th>Categoria Id</th>
-                <th colspan="3">Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +29,6 @@
         </tbody>
 
     </table>
-  {{ $items->links() }}
+  
 
 </div>

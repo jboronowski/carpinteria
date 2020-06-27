@@ -7,6 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use App\Exports\ItemExport;
+use App\Exports\stockExport;
 use Maatwebsite\Excel\Facades\Excel;
 class Controller extends BaseController
 {
@@ -14,5 +15,6 @@ class Controller extends BaseController
 public function export(){
         return Excel::download(new ItemExport, 'Item.xlsx');
     }
+ 
 }
 
