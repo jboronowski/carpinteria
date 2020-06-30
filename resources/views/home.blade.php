@@ -21,9 +21,9 @@
                 <p>Categoria</p>
               </div>
               <div class="icon">
-                <i class="ion ion-bag"></i>
+              <i class="fa fa-edit"></i>
               </div>
-              <a href="{{ route('categorias.index') }}" class="small-box-footer">Mas informacion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('categorias.index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -36,9 +36,9 @@
                 <p>Items</p>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+               <i class="fa fa-archive"></i>
               </div>
-              <a href="{{ route('items.index') }}" class="small-box-footer">Mas informacion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('items.index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -51,9 +51,9 @@
                 <p>Deposito</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="fa fa-clone"></i>
               </div>
-              <a href="{{ route('depositos.index') }}" class="small-box-footer">Mas informacion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('depositos.index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -65,9 +65,9 @@
                 <p>Stock</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fa fa-book"></i>
               </div>
-              <a href="{{ route('stocks.index') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('stocks.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
