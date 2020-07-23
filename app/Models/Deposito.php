@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use OwenIt\Auditing\Contracts\Auditable;   
 
 /**
  * Class Deposito
@@ -12,9 +13,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @property string descripcion
  */
-class Deposito extends Model
+class Deposito extends Model implements Auditable
 {
     use SoftDeletes;
+    use \OwenIt\Auditing\Auditable;
 
     public $table = 'depositos';
     

@@ -46,7 +46,7 @@ class ItemController extends AppBaseController
      */
     public function create()
     {
-        
+
         $categorias = Categoria::pluck('categoria_nombre','id');
         return view('items.create',compact(
             'categorias'));

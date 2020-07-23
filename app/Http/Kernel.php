@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http;
-
+App\Http\Middleware\TrustProxies::class;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-
+ use OwenIt\Auditing\Contracts\Auditable;   
 /**
  * Class Categoria
  * @package App\Models
@@ -13,9 +13,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property string categoria_nombre
  * @property string categoria_descripcion
  */
-class Categoria extends Model
+class Categoria extends Model implements Auditable
 {
     use SoftDeletes;
+    use \OwenIt\Auditing\Auditable;
 
     public $table = 'categorias';
     

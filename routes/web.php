@@ -20,6 +20,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+
+
+
 Route::resource('categorias', 'CategoriaController');
 
 Route::resource('items', 'ItemController');
@@ -27,6 +30,6 @@ Route::resource('items', 'ItemController');
 Route::resource('depositos', 'DepositoController');
 
 Route::resource('items', 'ItemController');
-
+Route::get('audits', 'AuditController@index');
 Route::resource('stocks', 'StockController');
 Route::get('/exportar', 'HomeController@export');

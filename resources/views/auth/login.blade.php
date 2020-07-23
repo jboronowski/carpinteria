@@ -31,8 +31,11 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
+
 <body class="hold-transition login-page">
+
 <div class="login-box">
     <div class="login-logo">
         <a href="{{ url('/home') }}"><b>Carpinteria </b>S.A</a>
