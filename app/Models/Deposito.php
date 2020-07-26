@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use OwenIt\Auditing\Contracts\Auditable;   
+use OwenIt\Auditing\Contracts\Auditable;
 
 /**
  * Class Deposito
@@ -19,7 +19,7 @@ class Deposito extends Model implements Auditable
     use \OwenIt\Auditing\Auditable;
 
     public $table = 'depositos';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -45,7 +45,7 @@ class Deposito extends Model implements Auditable
      * @var array
      */
     public static $rules = [
-        'descripcion' => 'required|alpha',
+        'descripcion' => 'required',
     ];
 
 
@@ -53,5 +53,10 @@ class Deposito extends Model implements Auditable
      return $this-> hasMany('App\Models\Stock');
 
     }
+
+    public function transferencia (){
+   return $this-> hasMany('App\Models\Transferencia');
+
+  }
 
 }

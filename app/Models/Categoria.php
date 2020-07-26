@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
- use OwenIt\Auditing\Contracts\Auditable;   
+ use OwenIt\Auditing\Contracts\Auditable;
 /**
  * Class Categoria
  * @package App\Models
@@ -19,7 +19,7 @@ class Categoria extends Model implements Auditable
     use \OwenIt\Auditing\Auditable;
 
     public $table = 'categorias';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -47,9 +47,9 @@ class Categoria extends Model implements Auditable
      * @var array
      */
     public static $rules = [
-        'categoria_nombre' => 'required|alpha',
-        'categoria_descripcion' => 'required|alpha'
-        
+        'categoria_nombre' => 'required',
+        'categoria_descripcion' => 'required'
+
     ];
     public function Item (){
      return $this-> hasMany('App\Models\Item');

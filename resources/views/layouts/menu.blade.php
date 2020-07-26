@@ -19,6 +19,9 @@
 </li>
 <li class=>
    <a href="{{ action('AuditController@index') }}"><i class="fa fa-address-card"></i></i><span>Auditoria</span></a>
- 
+
+</li>
+<li class="{{ Request::is('transferencias*') ? 'active' : '' }}">
+    <a href="{{ route('transferencias.index') }}"><i class="fa fa-edit"></i><span>Transferencias</span></a>
 </li>
 

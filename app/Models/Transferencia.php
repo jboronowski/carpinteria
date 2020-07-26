@@ -7,20 +7,20 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use OwenIt\Auditing\Contracts\Auditable;
 
 /**
- * Class Stock
+ * Class Transferencia
  * @package App\Models
- * @version June 24, 2020, 8:57 pm UTC
+ * @version July 25, 2020, 8:46 pm UTC
  *
- * @property integer cantidad
- * @property integer item_id
- * @property integer deposito_id
+ * @property integer $cantidad
+ * @property integer $id_origen
+ * @property integer $id_destino
  */
-class Stock extends Model implements Auditable
+class Transferencia extends Model implements Auditable
 {
     use SoftDeletes;
     use \OwenIt\Auditing\Auditable;
 
-    public $table = 'stocks';
+    public $table = 'transferencias';
 
 
     protected $dates = ['deleted_at'];
@@ -29,8 +29,9 @@ class Stock extends Model implements Auditable
 
     public $fillable = [
         'cantidad',
-        'item_id',
-        'deposito_id'
+        'id_origen',
+        'id_destino',
+        'item_id'
     ];
 
     /**
@@ -41,8 +42,9 @@ class Stock extends Model implements Auditable
     protected $casts = [
         'id' => 'integer',
         'cantidad' => 'integer',
-        'item_id' => 'integer',
-        'deposito_id' => 'integer'
+        'id_origen' => 'integer',
+        'id_destino' => 'integer',
+        'item_id' => 'integer'
     ];
 
     /**
@@ -51,22 +53,19 @@ class Stock extends Model implements Auditable
      * @var array
      */
     public static $rules = [
-        'cantidad' => 'required',
-        'item_id' => 'required',
-        'deposito_id' => 'required'
 
     ];
-
-     public function deposito (){
-     return $this-> belongsTo('App\Models\Deposito');
-
-}
-
-    public function item (){
-        return $this-> belongsTo('App\Models\Item');
-
+    public function deposito(){
+        return $this-> belongsTo('App\Models\Deposito', 'id_origen');
+    }
+    public function deposito1(){
+        return $this-> belongsTo('App\Models\Deposito', 'id_destino');
     }
 
+
+    public function item(){
+        return $this-> belongsTo('App\Models\Item');
+    }
 
 
 }
