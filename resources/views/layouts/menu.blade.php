@@ -17,7 +17,7 @@
 <li class="{{ Request::is('stocks*') ? 'active' : '' }}">
     <a href="{{ route('stocks.index') }}"><i class="fa fa-book"></i></i><span>Stock</span></a>
 </li>
-<li class="active">
+<li class=>
    <a href="{{ action('AuditController@index') }}"><i class="fa fa-address-card"></i></i><span>Auditoria</span></a>
  
 </li>

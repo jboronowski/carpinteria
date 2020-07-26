@@ -67,7 +67,7 @@
               <div class="icon">
                 <i class="fa fa-book"></i>
               </div>
-              <a href="{{ route('stocks.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('stocks.index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
