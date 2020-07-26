@@ -33,3 +33,6 @@ Route::resource('items', 'ItemController');
 Route::get('audits', 'AuditController@index');
 Route::resource('stocks', 'StockController');
 Route::get('/exportar', 'HomeController@export');
+
+
+Route::resource('transferencias', 'TransferenciaController');
