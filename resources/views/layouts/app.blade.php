@@ -187,8 +187,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
+<style type="text/css">
+        .select2-container--default .select2-selection--single {
+            height: calc(1.5em + .80rem + 2px) !important;
+        }
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+            $("select").select2();
+        });
+    </script>
 
-    @yield('scripts')
     <script>
      $(document).ready(function() {
     

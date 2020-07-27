@@ -65,7 +65,7 @@ class ItemController extends AppBaseController
 
         $item = $this->itemRepository->create($input);
 
-        Flash::success('Item saved successfully.');
+        Flash::success('Item guardado correctamente.');
 
         return redirect(route('items.index'));
     }
@@ -82,7 +82,7 @@ class ItemController extends AppBaseController
         $item = $this->itemRepository->findWithoutFail($id);
 
         if (empty($item)) {
-            Flash::error('Item not found');
+            Flash::error('Item no encontrado');
 
             return redirect(route('items.index'));
         }
@@ -104,7 +104,7 @@ class ItemController extends AppBaseController
          $categorias = Categoria::pluck('categoria_nombre','id');
 
         if (empty($item)) {
-            Flash::error('Item not found');
+            Flash::error('Item no encontrado');
 
             return redirect(route('items.index'));
         }
@@ -127,14 +127,14 @@ class ItemController extends AppBaseController
         $item = $this->itemRepository->findWithoutFail($id);
 
         if (empty($item)) {
-            Flash::error('Item not found');
+            Flash::error('Item no encontrado');
 
             return redirect(route('items.index'));
         }
 
         $item = $this->itemRepository->update($request->all(), $id);
 
-        Flash::success('Item updated successfully.');
+        Flash::success('Item actualizado correctamente.');
 
         return redirect(route('items.index'));
     }
@@ -151,14 +151,14 @@ class ItemController extends AppBaseController
         $item = $this->itemRepository->findWithoutFail($id);
 
         if (empty($item)) {
-            Flash::error('Item not found');
+            Flash::error('Item no encontrado');
 
             return redirect(route('items.index'));
         }
 
         $this->itemRepository->delete($id);
 
-        Flash::success('Item deleted successfully.');
+        Flash::success('Item eliminado correctamente.');
 
         return redirect(route('items.index'));
     }

@@ -53,6 +53,10 @@ class Transferencia extends Model implements Auditable
      * @var array
      */
     public static $rules = [
+        'cantidad' => 'integer',
+        'id_origen' => 'integer',
+        'id_destino' => 'integer',
+        'item_id' => 'integer'
 
     ];
     public function deposito(){

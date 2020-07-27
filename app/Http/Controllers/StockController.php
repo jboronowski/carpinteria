@@ -65,7 +65,7 @@ class StockController extends AppBaseController
 
         $stock = $this->stockRepository->create($input);
 
-        Flash::success('Stock saved successfully.');
+        Flash::success('Stock guardado correctamente.');
 
         return redirect(route('stocks.index'));
     }
@@ -82,7 +82,7 @@ class StockController extends AppBaseController
         $stock = $this->stockRepository->findWithoutFail($id);
 
         if (empty($stock)) {
-            Flash::error('Stock not found');
+            Flash::error('Stock no se encontrado');
 
             return redirect(route('stocks.index'));
         }
@@ -103,7 +103,7 @@ class StockController extends AppBaseController
          $depositos = Deposito::pluck('descripcion','id');
           $items = Item::pluck('item_nombre','id');
         if (empty($stock)) {
-            Flash::error('Stock not found');
+            Flash::error('Stock no encontrado');
 
             return redirect(route('stocks.index'));
         }
@@ -124,14 +124,14 @@ class StockController extends AppBaseController
         $stock = $this->stockRepository->findWithoutFail($id);
 
         if (empty($stock)) {
-            Flash::error('Stock not found');
+            Flash::error('Stock no encontrado');
 
             return redirect(route('stocks.index'));
         }
 
         $stock = $this->stockRepository->update($request->all(), $id);
 
-        Flash::success('Stock updated successfully.');
+        Flash::success('Stock actualizado correctamente.');
 
         return redirect(route('stocks.index'));
     }
@@ -148,14 +148,14 @@ class StockController extends AppBaseController
         $stock = $this->stockRepository->findWithoutFail($id);
 
         if (empty($stock)) {
-            Flash::error('Stock not found');
+            Flash::error('Stock no encontrado');
 
             return redirect(route('stocks.index'));
         }
 
         $this->stockRepository->delete($id);
 
-        Flash::success('Stock deleted successfully.');
+        Flash::success('Stock eliminado correctamente.');
 
         return redirect(route('stocks.index'));
     }

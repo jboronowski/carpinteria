@@ -27,7 +27,7 @@
                   Auditoria
           <thead >
             <tr>
-              <th>Modelo</th>
+              
               <th>Accion</th>
               <th>Usuario</th>
               <th>Hora</th>
@@ -38,7 +38,7 @@
           <tbody>
             @foreach($audits as $audit)
               <tr>
-                <td>{{ $audit->auditable_type }} (id: {{ $audit->auditable_id }})</td>
+                
                 <td>{{ $audit->event }}</td>
                 <td>{{ $audit->user->name }}</td>
                 <td>{{ $audit->created_at }}</td>

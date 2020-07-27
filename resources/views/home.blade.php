@@ -70,8 +70,39 @@
               <a href="{{ route('stocks.index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
-        </div>
+                    <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>Auditoria</h3>
 
+                <p>Auditoria</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-address-card"></i>
+              </div>
+              <a href="{{ action('AuditController@index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+                    <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>Transferencia</h3>
+
+                <p>Transferencia</p>
+              </div>
+              <div class="icon">
+               <i class="fa fa-clipboard"></i>
+              </div>
+              <a href="{{ route('transferencias.index') }}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+</div>
+</div>
+</section>
+        </div>
 
 @endsection
