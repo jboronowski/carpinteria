@@ -1,0 +1,45 @@
+1-Crear base de datos
+2-configurar el archivo .env 
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:94LJBsBv/MiqtEh4NCPNx6CcRWmpgU32Fof6n827TfA=
+APP_DEBUG=true
+APP_LOG_LEVEL=debug
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db
+DB_USERNAME=root
+DB_PASSWORD=
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+3-Comando para crear base de datos
+php artisan make:command CrearmiBasedeDatos 
+4-Generar clave con php artisan key:generate
+5-Correr las migraciones php artisan migrate
+6-Correr el servidor php artisan serve
+7-Buscar en el navegador http://127.0.0.1:8000/login
+8-Registrarse
+Listo, ya se puede utilizar.
