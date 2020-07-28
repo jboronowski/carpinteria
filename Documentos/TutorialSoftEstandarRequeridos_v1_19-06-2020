@@ -1,0 +1,24 @@
+1-	Instalar XAMPP OR WAMP, también provee de PHP y MYSQL
+2-	Descargar paquete instalador para Windows https://www.apachefriends.org/es/index.html con php superior o igual 7.2.5
+3-	Instalar Laravel
+  a.	Descargar paquete instalador para Windows - https://getcomposer.org/
+  b.	Ejecutar en el CMD - composer global require laravel/installer
+4-	Ejecutar XAMPP OR WAMP 
+  a.	Activar Apache y MYSQL
+5-	Clonar proyecto
+  a.	Registrarse en github https://github.com/ 
+  b.	Descargar y instalar GIT https://git-scm.com/downloads 
+  c.	Crear una carpeta donde queremos bajar nuestro proyecto
+  d.	abrir GIT BASH, ubicarse en la carpeta que creamos, ejemplo C:/miproyectos/laravel/etc 
+  e.	usar en el git bash cd ‘nombredecarpeta’ para entrar y cd .. para salir de la carpeta 
+  f.	Cuando estamos en la carpeta con el git bash, 
+  g.	hacer  git clone https://github.com/jlbb-dev/carpinteria.git (copia el proyecto ubicado en el repositorio a nuestro equipo) 
+  h.	git init (inicializa el git local) 
+  i.	git remote add origin https://github.com/jlbb-dev/carpinteria.git (configura para que los cambios suban al repositorio seleccionado) 
+6-	Para subir cambios al proyecto 
+  a.	git add . (Añade todos los archivos nuevos) 
+  b.	git commit –m “mensaje del comit” 
+  c.	git push origin master
+7-	Para el Paquete InfyOm utilizar documentación oficial
+  a.	Paquete InfyOm https://labs.infyom.com/laravelgenerator/docs/7.0/introduction
+  b.	Paquete para Laravel Auditing https://github.com/owen-it/laravel-auditing
