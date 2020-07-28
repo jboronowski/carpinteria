@@ -1,3 +1,4 @@
+0-instalar los paquetes con el comando composer update
 1-Crear base de datos
 2-configurar el archivo .env 
 APP_NAME=Laravel
